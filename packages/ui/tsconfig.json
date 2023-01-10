@@ -1,0 +1,14 @@
+{
+  "extends": "@packages/tsconfig/react-library.json",
+  "compilerOptions": {
+    "lib": ["DOM", "ES2022"],
+    "baseUrl": ".",
+    "paths": {
+      "header/*": ["src/header/*"],
+      "footer/*": ["src/footer/*"],
+      "utils/*": ["src/utils/*"]
+    }
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

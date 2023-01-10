@@ -1,0 +1,184 @@
+.container {
+  width: 100%;
+  padding-top: 16px;
+  background-color: #323334;
+}
+
+.title {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 30px;
+  margin: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.underline:after {
+  content: '_';
+  color: #be99ff;
+}
+
+.text {
+  margin: 0 auto;
+  padding: 16px 55px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+}
+
+.list {
+  width: 100%;
+}
+
+/* ListItemText primary props */
+.list span {
+  font-size: 20px;
+  color: white;
+}
+
+/* ListItemText secondary props */
+.list p {
+  text-align: justify;
+  font-size: 18px;
+  color: white;
+}
+
+.listLink {
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.listLink:hover * {
+  color: #be99ff;
+  fill: #be99ff;
+}
+
+.listIcon {
+  min-width: initial;
+}
+
+.listText {
+  margin: 0 16px 0 16px;
+}
+
+.video {
+  background-color: #1e1e1e;
+  color: white;
+  border-right: 2px inset black;
+}
+
+.videoTitle {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.cardIcons {
+  float: left;
+  width: 24px;
+  margin-top: 3px;
+  padding-right: 5px;
+}
+
+.engine {
+  color: white;
+  padding: 7px;
+  font-size: 12px;
+  font-family: 'Roboto Mono', sans-serif;
+  width: 100%;
+  margin-left: 0;
+  word-break: break-word;
+}
+
+.engine span {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 13px;
+}
+
+.engineActive span {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 13px;
+}
+
+.engineActive {
+  color: black;
+  background-color: #81c8be;
+  padding: 7px;
+  font-size: 12px;
+  font-family: 'Roboto Mono', sans-serif;
+  width: 100%;
+  margin-left: 0;
+  word-break: break-word;
+}
+
+.player {
+  background-size: cover;
+}
+
+@media screen and (max-width: 1023px) {
+  .title {
+    padding-left: 20px;
+  }
+
+  .vscode {
+    padding: 0 30px;
+  }
+
+  .head {
+    border-top-right-radius: 10px;
+    border-right: 2px solid black;
+  }
+
+  .player {
+    border-right: 2px solid black;
+  }
+  .secondList {
+    margin-top: -20px;
+  }
+
+  .linesImg {
+    margin-top: -20px;
+  }
+
+  .mobileNone {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobileNone {
+    display: initial;
+  }
+}
+
+.imgLeftContainer > span {
+  margin: -36px 0 0 -10px !important;
+}
+
+.imgLeft {
+  margin: -50px 0 0 -10px;
+  transform: rotate(180deg);
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.imgRightContainer > span {
+  float: right;
+  margin: -20px 0 -12px 54px !important;
+}
+
+.imgRight {
+  margin-bottom: -30px;
+  margin-right: -8px;
+  float: right;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
