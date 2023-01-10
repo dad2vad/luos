@@ -1,9 +1,9 @@
-import { MongoClient, MongoClientOptions, ServerApiVersion } from 'mongodb';
+import { MongoClient, MongoClientOptions, ServerApiVersion } from "mongodb";
 
-import { decryptedMongoDBCert, decryptedMongoDBKey } from './cert';
+import { decryptedMongoDBCert, decryptedMongoDBKey } from "./cert";
 
 if (process.env.MONGODB_URI === undefined) {
-  throw new Error('Missing MONGODB_URI environment variable');
+  throw new Error("Missing MONGODB_URI environment variable");
 }
 
 // Setup Mongo client with decrypted data
@@ -16,7 +16,7 @@ const options: MongoClientOptions = {
   serverApi: ServerApiVersion.v1,
 };
 
-if (process.env.VERCEL_ENV === 'development') {
+if (process.env.VERCEL_ENV === "development") {
   // In development mode, use a global variable so that the value
   // is preserved across module reloads caused by HMR (Hot Module Replacement).
   // @ts-ignore

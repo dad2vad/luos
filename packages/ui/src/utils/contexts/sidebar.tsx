@@ -1,4 +1,4 @@
-import { createContext, ReactElement, useState, useCallback } from 'react';
+import { createContext, ReactElement, useState, useCallback } from "react";
 
 export type SidebarContextType = {
   isSidebarOpen: boolean;

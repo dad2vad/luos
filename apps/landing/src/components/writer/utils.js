@@ -44,43 +44,29 @@ export class makeCancelable {
 export const propTypeValidation = {
   multiTextDelay: (props, propName) => {
     if (props[propName] && typeof props[propName] != 'number')
-      return new Error(
-        `Invalid ${propName} supplied to react-type-writer-component component.`,
-      );
+      return new Error(`Invalid ${propName} supplied to react-type-writer-component component.`);
     if (!props['multiText'] && props[propName])
-      return new Error(
-        `Invalid!. multiText props must be provided to use ${propName} .`,
-      );
+      return new Error(`Invalid!. multiText props must be provided to use ${propName} .`);
   },
   typeSpeed: (props, propName) => {
     if (props[propName] && typeof props[propName] != 'number')
-      return new Error(
-        `Invalid ${propName} supplied to react-typeWriter component.`,
-      );
+      return new Error(`Invalid ${propName} supplied to react-typeWriter component.`);
   },
   startDelay: (props, propName) => {
     if (props[propName] && typeof props[propName] != 'number')
-      return new Error(
-        `Invalid ${propName} supplied to react-typeWriter component.`,
-      );
+      return new Error(`Invalid ${propName} supplied to react-typeWriter component.`);
   },
   text: (props, propName) => {
     if (!props['multiText'] && typeof props[propName] != 'string')
-      return new Error(
-        `Invalid ${propName} supplied to react-typeWriter component!`,
-      );
+      return new Error(`Invalid ${propName} supplied to react-typeWriter component!`);
   },
   cursorColor: (props, propName) => {
     if (props[propName] && typeof props[propName] != 'string')
-      return new Error(
-        `Invalid ${propName} supplied to react-typeWriter component!`,
-      );
+      return new Error(`Invalid ${propName} supplied to react-typeWriter component!`);
   },
   textStyle: (props, propName) => {
     if (props[propName] && typeof props[propName] != 'object')
-      return new Error(
-        `Invalid ${propName} supplied to react-typeWriter component!`,
-      );
+      return new Error(`Invalid ${propName} supplied to react-typeWriter component!`);
   },
   multiText: (props, propName) => {
     if (props[propName] && typeof props[propName] == 'object') {
@@ -91,9 +77,7 @@ export const propTypeValidation = {
           );
       }
     } else if (props[propName] && typeof props[propName] !== 'object')
-      return new Error(
-        `Invalid ${propName} supplied to react-typeWriter component!`,
-      );
+      return new Error(`Invalid ${propName} supplied to react-typeWriter component!`);
   },
   scrollArea: (props, propName) => {
     if (props[propName] && typeof props[propName] != 'object')
@@ -101,9 +85,7 @@ export const propTypeValidation = {
   },
   multiTextLoop: (props, propName) => {
     if (props[propName] && typeof props[propName] != 'boolean')
-      return new Error(
-        `Invalid ${propName} supplied to react-typeWriter component.`,
-      );
+      return new Error(`Invalid ${propName} supplied to react-typeWriter component.`);
   },
 };
 
@@ -122,9 +104,7 @@ export const contentInView = (element) => {
     bottom: elementTopPosition + elementPositionProps.height,
   };
   return (
-    (elementPosition.bottom >= viewport.top &&
-      elementPosition.bottom <= viewport.bottom) ||
-    (elementPosition.top <= viewport.bottom &&
-      elementPosition.top >= viewport.top)
+    (elementPosition.bottom >= viewport.top && elementPosition.bottom <= viewport.bottom) ||
+    (elementPosition.top <= viewport.bottom && elementPosition.top >= viewport.top)
   );
 };
